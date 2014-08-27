@@ -34,6 +34,7 @@ life_shop_cam camSetPos (player modelToWorld [1,4,2]);
 life_shop_cam camSetFOV .33;
 life_shop_cam camSetFocus [50, 0];
 life_shop_cam camCommit 0;
+life_cMenu_lock = false;
 
 if(isNull (findDisplay 3100)) exitWith {};
 _list = (findDisplay 3100) displayCtrl 3101;
@@ -164,4 +165,5 @@ if((life_clothing_purchase select 4) == -1) then
 };
 
 life_clothing_purchase = [-1,-1,-1,-1,-1];
+
 [] call life_fnc_saveGear;

@@ -24,11 +24,7 @@ switch (_vehicle) do
 			case 5: {_color = "Blue / White"};
 			case 6: {_color = "Black"};
 			case 7: {_color = "Black"};
-			case 8: {_color = "Yellow"};
-			case 9: {_color = "Uk Cop"};
-			case 10: {_color = "Cab"};
-			case 11: {_color = "Mechanic"};
-			case 12: {_color = "Monster"};
+			case 8: {_color = "Taxi"};
 		};
 	};
 	
@@ -44,7 +40,6 @@ switch (_vehicle) do
 			case 5: {_color = "White"};
 			case 6: {_color = "Grey"};
 			case 7: {_color = "Black"};
-			case 8: {_color = "Hello Kitty"};
 		};
 	};
 	
@@ -59,9 +54,6 @@ switch (_vehicle) do
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Green"};
 			case 6: {_color = "Cop"};
-			case 7: {_color = "Uk Cop"};
-			case 8: {_color = "Orient"};
-			case 9: {_color = "Metallica"};
 		};
 	};
 	
@@ -74,13 +66,6 @@ switch (_vehicle) do
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Orange";};
 			case 4: {_color = "Cop";};
-			case 5: {_color = "Uk Cop";};
-			case 6: {_color = "Batman";};
-			case 7: {_color = "Blue Flame";};
-			case 8: {_color = "Pokemon"};
-			case 9: {_color = "Stripes"};
-			case 10: {_color = "Union Jack"};
-			case 11: {_color = "Speed Freak"};
 		};
 	};
 	
@@ -124,7 +109,6 @@ switch (_vehicle) do
 			case 6: {_color = "Digi Green"};
 			case 7: {_color = "Hunter Camo"};
 			case 8: {_color = "Rebel Camo"};
-			case 9: {_color = "Uk Cop"};
 		};
 	};
 	
@@ -147,8 +131,6 @@ switch (_vehicle) do
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "EMS White"};
-			case 15: {_color = "Uk Cop"};
-			case 16: {_color = "Hello Kitty"};
 		};
 	};
 	
@@ -170,8 +152,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Regular"};
 			case 1: {_color = "Black"};
-			case 2: {_color = "Uk Cop"};
-		};	
+		};
 	};
 	
 	case "I_Truck_02_covered_F":

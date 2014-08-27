@@ -19,7 +19,7 @@ closeDialog 0;
 
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {};
-if(life_atmcash < (_houseCfg select 0)) exitWith {hint format["You do not have enough money! House Price is %1",[(_houseCfg select 0)] call life_fnc_numberText]};
+if(life_atmcash < (_houseCfg select 0)) exitWith {hint localize "STR_House_NotEnough"};
 
 _action = [
 	format[localize "STR_House_BuyMSG",

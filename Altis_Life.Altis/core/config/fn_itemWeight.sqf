@@ -56,9 +56,5 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
-	case "wine": {2};
-    case "moonshine": {2};
-    case "grapes": {3};
-	case "speedbomb": {10};
 	default {1};
 };

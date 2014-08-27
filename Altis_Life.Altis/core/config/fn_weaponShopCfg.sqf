@@ -133,18 +133,14 @@ switch(_shop) do
 						["arifle_TRG20_F",nil,25000],
 						["arifle_Katiba_F",nil,30000],
 						["srifle_DMR_01_F",nil,50000],
-						["srifle_EBR_F",nil,75000],
 						["arifle_SDAR_F",nil,20000],
 						["optic_ACO_grn",nil,3500],
 						["optic_Holosight",nil,3600],
-						["optic_MRCOacc_pointer_IR",nil,4000],
-						["optic_SOS",nil,3750],
 						["acc_flashlight",nil,1000],
 						["optic_Hamr",nil,7500],
 						["30Rnd_9x21_Mag",nil,200],
 						["20Rnd_556x45_UW_mag",nil,125],
 						["30Rnd_556x45_Stanag",nil,300],
-						["20Rnd_762x51_Mag",nil,500],
 						["10Rnd_762x51_Mag",nil,500],
 						["30Rnd_65x39_caseless_green",nil,275]
 					]

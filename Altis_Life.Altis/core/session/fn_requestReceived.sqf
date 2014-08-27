@@ -49,7 +49,7 @@ switch(playerSide) do {
 	case civilian: {
 		life_is_arrested = _this select 7;
 		__CONST__(life_coplevel, 0);
-        __CONST__(life_medicLevel, 0);
+		__CONST__(life_medicLevel, 0);
 		life_houses = _this select 9;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);

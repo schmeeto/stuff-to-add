@@ -8,38 +8,10 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-if(isDedicated && isNil("life_market_prices")) then
-{
-[] call life_fnc_marketconfiguration;
-diag_log "Market prices generated!";
-
-"life_market_prices" addPublicVariableEventHandler
-{
-diag_log format["Market prices updated! %1", _this select 1];
-};
-
-//Start server fsm
-[] execFSM "core\fsm\server.fsm";
-diag_log "Server FSM executed";
-};
-
-life_versionInfo = "Altis Life RPG v3.1.3.5";
+life_versionInfo = "Altis Life RPG v3.1.4.5";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
 
-// Walk
-[] execVM "DCL\init.sqf";
-
-//IGI
-_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
-
-//No Side Voice
-[] execVM "scripts\fn_noSideVoice.sqf";
-
-//Stats Bar
-[] execVM "scripts\fn_statusBar.sqf";
-
-//admin
-[] execVM "anticheat.sqf";
+"BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};

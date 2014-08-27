@@ -1,4 +1,4 @@
-//*
+/*
 	File: fn_copLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
 	Edited: Itsyuka

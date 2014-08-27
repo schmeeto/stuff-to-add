@@ -9,6 +9,7 @@ class Socket_Reciever
 		class insertPlayerInfo {};
 		class updateRequest {};
 		class syncData {};
+		class updatePartial {};
 	};
 };
 
@@ -25,7 +26,7 @@ class SpyGlass
 		class observe{};
 		class payLoad{};
 		class variableCheck{};
-		class initSpy {preInit=1;};
+		class initSpy {};
 	};
 };
 
@@ -76,25 +77,17 @@ class Life_Client_Core
 	{
 		file = "core\actions";
 		class buyLicense {};
-		class chemlightUse {};
-		class heal {};
 		class healHospital {};
 		class pushVehicle {};
 		class repairTruck {};
 		class serviceChopper {};
-		class serviceTruck {};
 		class catchFish {};
 		class catchTurtle {};
 		class dpFinish {};
 		class dropFishingNet {};
-		class gatherApples {};
-		class gatherCannabis {};
-		class gatherHeroin {};
-		class gatherOil {};
 		class getDPMission {};
 		class postBail {};
 		class processAction {};
-		class suicideBomb {};
 		class arrestAction {};
 		class escortAction {};
 		class impoundAction {};
@@ -108,37 +101,11 @@ class Life_Client_Core
 		class pickupItem {};
 		class pickupMoney {};
 		class ticketAction {};
-		class gatherPeaches {};
-		class gatherCocaine {};
-		class pumpRepair {};
 		class packupSpikes {};
 		class storeVehicle {};
 		class robAction {};
 		class captureHideout {};
-		class robShops {}; //Rob Gas Station & Shops Script
-		//casino
-		class processMultiAction {};
-		class processCasinoSlots {};
-		class gatherGrapes {};
-	};
-	
-	class Market
-	{
-		file = "core\market";
-		
-		class openMarketView;
-		class refreshMarketView;
-		class marketShortView;
-		class marketBuy;
-		class marketSell;
-		class marketGetBuyPrice;
-		class marketGetSellPrice;
-		class marketconfiguration;
-		class marketReset;
-		class marketChange;
-		class marketGetRow;
-		class marketGetPriceRow;
-		class marketSetPriceRow;
+		class gather {};
 	};
 	
 	class Housing
@@ -218,7 +185,6 @@ class Life_Client_Core
 		class handleInv {};
 		class hudSetup {};
 		class hudUpdate {};
-		class fetchGear{};
 		class tazeSound {};
 		class animSync {};
 		class simDisable {};
@@ -237,6 +203,7 @@ class Life_Client_Core
 		class nearUnits {};
 		class actionKeyHandler {};
 		class playerCount {};
+		class fetchDeadGear {};
 		class loadDeadGear {};
 		class isnumeric {};
 		class escInterupt {};
@@ -250,12 +217,8 @@ class Life_Client_Core
 		class inventoryOpened {};
 		class isUIDActive {};
 		class saveGear {};
-        class loadGear {};
+		class loadGear {};
 		class stripDownPlayer {};
-		class randomRound {}; //market
-		//casino
-		class slotMachineRewards {};
-		class casinoSounds {};
 	};
 	
 	class Network
@@ -279,14 +242,13 @@ class Life_Client_Core
 		class jailMe {};
 		class jail {};
 		class tazed {};
-		class civLoadout {};
 		class knockedOut {};
 		class knockoutAction {};
 		class robReceive {};
 		class robPerson {};
 		class removeLicenses {};
-		class zoneCreator {};
 		class demoChargeTimer {};
+		class civLoadout {};
 	};
 	
 	class Vehicle
@@ -310,7 +272,6 @@ class Life_Client_Core
 		file = "core\cop";
 		class copMarkers {};
 		class copLights {};
-		class copLoadout {};
 		class vehInvSearch {};
 		class copSearch {};
 		class bountyReceive {};
@@ -330,6 +291,8 @@ class Life_Client_Core
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
+		class copLoadout {};
+		class ticketPaid {};
 	};
 	
 	class Gangs
@@ -385,7 +348,6 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
-		class speedBomb {};
 	};
 	
 	class Dialog_Controls
@@ -411,11 +373,5 @@ class Life_Client_Core
 		class safeFix {};
 		class vehicleGarage {};
 		class gangDeposit {};
-	};
-	
-	class Cam
-	{
-	   file ="core";
-	   class IntroCam {};
 	};
 };
